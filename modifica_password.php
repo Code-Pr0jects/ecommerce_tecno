@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <h1>Accedi</h1>
+    <h1>Modifica Account</h1>
 
     <form action="">
         <div>
@@ -19,9 +19,14 @@
             <input type="password" id="fpassowrd" name="fpassowrd">
         </div>
         <div>
-            <span>Non hai un account? Registrati</span><br>
-            <span>Ti sei dimenticato la password?</span><br>
-            <input type="submit" value="Accedi">
+            <label for="findirizzo">Indirizzo</label>
+            <input type="text" name="findirizzo" id="findirizzo">
+        </div>
+        <div>
+            <input type="file">
+        </div>
+        <div>
+            <input type="submit" value="Modifica">
         </div>
     </form>
     
