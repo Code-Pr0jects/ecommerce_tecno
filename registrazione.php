@@ -43,7 +43,7 @@
         </div>
         <div>
             <label>Hai già un account? Accedi</label><br>
-            <input type="submit" name="submit" value="Registrazione">
+            <input type="submit" name="submit" value="Registrati">
         </div>
     </form>    
 </body>

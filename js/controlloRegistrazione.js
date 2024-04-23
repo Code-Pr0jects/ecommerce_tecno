@@ -50,7 +50,7 @@ formRegistrazione.addEventListener('submit', function(evt){
         }
         fpassword.after(errPassword);         
     }
-    const regexIndirizzo = /^(Via|via)\s[a-zA-Z]+,\s[1-9]\d?$/;
+    const regexIndirizzo = /^(Via|via)\s(?:[a-zA-Z]+\s?)+,\s[1-9]\d?$/;        
     if(findirizzo.value == '' || regexIndirizzo.test(findirizzo.value) == false){                
         const errIndirizzo = document.createElement('span');                
         errIndirizzo.classList.add('errorMsg');
