@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrazione</title>
+    <link rel="stylesheet" href="./css/style.css">    
+    <script src="./js/controlloRegistrazione.js" defer></script>
 </head>
 <body>
-
     <h1>Registrazione</h1>
-
-    <form action="">
+    <form id="formRegistrazione" action="./php/richiestaRegistrazione.php" method="POST">
         <div id="boxNome">
             <label for="fnome">Nome</label>
-            <input type="text" id="fnome" name="fnome">
+            <input type="text" id="fnome" name="fnome">            
         </div>
         <div id="boxCognome">
             <label for="fcognome">Cognome</label>
@@ -43,9 +43,8 @@
         </div>
         <div>
             <label>Hai già un account? Accedi</label><br>
-            <input type="submit" value="Registrati">
+            <input type="submit" name="submit" value="Registrazione">
         </div>
-    </form>
-    
+    </form>    
 </body>
 </html>
