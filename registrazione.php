@@ -1,3 +1,7 @@
+<?php
+require("./php/database.php");
+require("./php/controlloEmailDB.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrazione</title>
     <link rel="stylesheet" href="./css/style.css">    
-    <script src="./js/controlloRegistrazione.js" defer></script>
+    <script type="module" src="./js/controlloRegistrazione.js" defer></script>       
+    <script src="./js/resettaPagina.js" defer></script>
 </head>
 <body>
     <h1>Registrazione</h1>
@@ -21,7 +26,12 @@
         <div id="boxEmail">
             <label for="femail">Email</label>
             <input type="text" id="femail" name="femail">
-        </div>
+            <?php        
+            if(isset($_GET['errorEmail'])){
+                echo '<span class="errorMsg">La seguente email è già stata utilizzata</span>';
+            }                                     
+            ?>            
+        </div>        
         <div id="boxPassword">
             <label for="fpassword">Password</label>
             <input type="password" id="fpassword" name="fpassword">
