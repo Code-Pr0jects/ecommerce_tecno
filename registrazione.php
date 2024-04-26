@@ -10,7 +10,7 @@ require("./php/controlloEmailDB.php");
     <title>Registrazione</title>
     <link rel="stylesheet" href="./css/style.css">    
     <script type="module" src="./js/controlloRegistrazione.js" defer></script>       
-    <script src="./js/resettaPagina.js" defer></script>
+    <script src="./js/resettaUrlPagina.js" defer></script>
 </head>
 <body>
     <h1>Registrazione</h1>
