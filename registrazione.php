@@ -17,7 +17,7 @@ require("./php/controlloEmailDB.php");
     <form id="formRegistrazione" action="./php/richiestaRegistrazione.php" method="POST">
         <div id="boxNome">
             <label for="fnome">Nome</label>
-            <input type="text" id="fnome" name="fnome">            
+            <input type="text" id="fnome" name="fnome">                  
         </div>
         <div id="boxCognome">
             <label for="fcognome">Cognome</label>
@@ -26,7 +26,7 @@ require("./php/controlloEmailDB.php");
         <div id="boxEmail">
             <label for="femail">Email</label>
             <input type="text" id="femail" name="femail">
-            <?php        
+            <?php                   
             if(isset($_GET['errorEmail'])){
                 echo '<span class="errorMsg">La seguente email è già stata utilizzata</span>';
             }                                     
